@@ -10,7 +10,6 @@ from oauth2client.service_account import ServiceAccountCredentials
 # Handles setting up the Google Sheets API
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
-# NOTE: The below line would need to be done if I/Pidge were to leave staff/the server, see documentation on how to set up the Google Sheets API
 json_file_path = os.path.join(script_dir, "extreme-ratio-443023-e1-e5b0be894908.json")
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
 creds = ServiceAccountCredentials.from_json_keyfile_name(json_file_path, scope)
